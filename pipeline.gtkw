@@ -1,0 +1,44 @@
+[dumpfile] "simulacion.vcd"
+[savefile] "pipeline.gtkw"
+[timestart] 0
+[size] 1600 900
+[pos] -1 -1
+*-16.0 0 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 220
+[signals_width] 260
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+top_tb.clk
+top_tb.reset
+@22
+top_tb.uut.PC[31:0]
+top_tb.uut.instr_IF[31:0]
+@200
+-IF/ID
+@22
+top_tb.uut.IFID_instr[31:0]
+@200
+-Hazards
+@28
+top_tb.uut.load_use
+top_tb.uut.PCSrc
+@22
+top_tb.uut.forwardA[1:0]
+top_tb.uut.forwardB[1:0]
+@200
+-EX
+@22
+top_tb.uut.alu_in_A[31:0]
+top_tb.uut.alu_in_B[31:0]
+top_tb.uut.alu_result_EX[31:0]
+top_tb.uut.IDEX_rd[4:0]
+@200
+-Write Back
+@28
+top_tb.uut.MEMWB_RegWrite
+@22
+top_tb.uut.MEMWB_rd[4:0]
+top_tb.uut.write_data_WB[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
